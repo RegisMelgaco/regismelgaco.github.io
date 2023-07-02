@@ -1,11 +1,28 @@
 html {
   font-family: 'Ubuntu', sans-serif;
-  padding-bottom: 5rem;
   scroll-behavior: smooth;
+
+  --accent: #F5B33A;
+  --accent-text: #F5B33A;
+}
+
+* {
+  scrollbar-width: thin !important;
+}
+*::-webkit-scrollbar {
+  width: 0;               /* hide ugly chrome scrollbar :P */
+}
+
+h1 {
+  margin: .2rem 0 !important;
 }
 
 a {
-  color: black !important;
+  color: var(--accent-text);
+  transition: all .2s;
+}
+a:hover {
+  color: var(--accent-text)
 }
 
 .container {
@@ -21,32 +38,29 @@ a {
   padding: 1rem 0;
   background-color: white;
 }
-
 .navbar li {
   list-style: none;
 }
-
 .navbar {
   text-decoration: none;
   transition: .2s;
 }
-
 .navbar a {
+  color: black;
   text-decoration: none;
+  transition: font-size .2s;
 }
-
 .navbar a:hover {
+  color: var(--accent-text);
   text-decoration: underline;
-  font-size: large;
+  font-size: 1.2rem;
 }
-
 .navbar ul {
   margin: 0;
   padding: 0;
   display: flex;
   gap: 0 1rem;
 }
-
 .navbar-title {
   font-size: large;
 }
@@ -54,24 +68,22 @@ a {
 section {
   padding-top: 4rem;
 }
-
 section h2 {
   margin-top: 2rem;
 }
 
 .title-separator {
-  border: 1px solid black;
+  border: 3px solid var(--accent);
   width: 20rem;
 }
 
 .cards-row {
   display: flex;
   gap: 1rem;
-  overflow: scroll;
+  overflow-x: scroll;
 }
-
 .card {
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
   border: 1px gray solid;
   border-radius: .4rem;
   align-items: center;
@@ -79,19 +91,51 @@ section h2 {
   gap: 1rem;
   width: fit-content;
 }
-
 .card-content {
   width: max-content;
 }
-
 .card-content p {
-  margin: .5rem;
+  margin: .2rem;
   font-family: 'Source Code Pro', monospace;
 }
-
 .card img {
   --size: 4rem;
   height: var(--size);
   /* max-width: var(--size); */
   /* object-fit: scale-down; */
+}
+
+.expirience-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+.expirience-grid > div > h5 {
+  margin-bottom: 0;
+}
+.expirience-grid ul {
+  margin-top: 0.5rem;
+  /* padding-left: 1.5rem; */
+  display: flex;
+  gap: 1rem;
+  list-style-type: none;
+  padding: 0;
+  flex-wrap: wrap;
+}
+.expirience-grid li {
+  padding: .5rem;
+  /* margin: .2rem; */
+  border-radius: 5ex;
+  border: 2px var(--accent) solid;
+  width: max-content;
+}
+
+footer {
+  margin-top: 8rem;
+  border-top: 1px black dashed;
+}
+
+footer a {
+  margin-left: .5rem;
 }

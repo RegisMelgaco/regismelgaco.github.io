@@ -4,7 +4,7 @@
     import flutterImg from "./assets/flutter.png";
     import vueImg from "./assets/vue.png";
     import androidImg from "./assets/android.png";
-    import jsImg from "./assets/js.png";
+    import javascriptImg from "./assets/js.png";
     import reactImg from "./assets/react.png";
     import gitImg from "./assets/git.png";
     import djangoImg from "./assets/django.png";
@@ -50,7 +50,7 @@
             site: "https://www.linkedin.com/company/wda-tecnologia-&-inova%C3%A7%C3%A3o/",
             start: new Date("2020-10"),
             end: new Date("2021-03"),
-            tech: ["flutter", "vue", "js", "docker", "git"],
+            tech: ["flutter", "vue", "javascript", "docker", "git"],
             description: `App development using Flutter and MobX. Frontend Web Development using Vue and Vuex. I worked with Flutter, Vue, Flux Architecture, Docker, Gitlab-CI and Heroku. Make decisions on the methodology used to solve problems, such as design patterns and data persistence technologies. Space to share knowledge, like when I gave a lecture on Nielsen Heuristics and Devops.`,
         },
         {
@@ -59,7 +59,7 @@
             site: "https://www.linkedin.com/company/greenmile/",
             start: new Date("2020-04"),
             end: new Date("2020-09"),
-            tech: ["js", "react", "git", "unit testing"],
+            tech: ["javascript", "react", "git", "unit testing"],
             description: `App development using Cordova, React, React Hooks, Redux, and Jest. I really enjoyed being part of an experienced team, who taught me a lot, such as refactoring and leadership techniques. I really enjoyed React Hooks, Redux, and doing unit tests. My greatest pride was convincing the leadership that we needed a new dev stack, testing Flutter and React Native.`,
         },
         {
@@ -94,7 +94,7 @@
             site: "https://ifce.edu.br/fortaleza/laboratorios/fotos/nash.jpg/view",
             start: new Date("2018-10"),
             end: new Date("2018-12"),
-            tech: ["react", "js", "git"],
+            tech: ["react", "javascript", "git"],
         },
         {
             company: "Freelance - 2Go!",
@@ -110,7 +110,7 @@
     let knowledge = {
         golang: { img: golangImg, pref: "is fav.", kind: "language" },
         kotlin: { img: kotlinImg, pref: "can do", kind: "language" },
-        js: { img: jsImg, pref: "can do", kind: "language" },
+        javascript: { img: javascriptImg, pref: "can do", kind: "language" },
         python: { img: pythonImg, pref: "can do", kind: "language" },
         django: { img: djangoImg, pref: "can do", kind: "framework" },
         react: { img: reactImg, pref: "can do", kind: "framework" },
@@ -285,17 +285,4 @@
 </main>
 
 <style>
-    .expirience-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 1rem;
-        row-gap: 1rem;
-    }
-    .expirience-grid > div > h5 {
-        margin-bottom: 0;
-    }
-    .expirience-grid > div > ul {
-        margin-top: 0.5rem;
-        padding-left: 1.5rem;
-    }
 </style>
